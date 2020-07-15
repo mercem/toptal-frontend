@@ -1,0 +1,109 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .should-active {
+    .field {
+      .disabled {
+        opacity: 1;
+      }
+    }
+
+    .ui.disabled.input {
+      input {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.profile-header {
+  margin-bottom: 30px;
+  font-size: $font-large;
+  font-weight: bold;
+}
+
+.profile-segment {
+  margin: auto !important;
+
+  &:last-child {
+    margin-top: 30px !important;
+    align-items: stretch;
+  }
+}
+
+.profile-input {
+  margin-bottom: 20px !important;
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.profile-dropdown {
+  &.ui.search.dropdown {
+    min-width: 177px !important;
+  }
+  &.profile-category.ui.search.dropdown {
+    margin: 0;
+    min-width: 275px !important;
+    max-width: 275px !important;
+  }
+}
+
+.profile-placeholder {
+  min-width: 550px;
+}
+
+.profile-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.profile-error {
+  margin: 0 15px;
+  color: $red;
+}
+
+.profile-send-email {
+  color: $green;
+}
+
+// MEDIA
+
+@media (min-width: $breakpoint-tablet) {
+  .profile-row {
+    display: flex;
+    margin: 20px 15px;
+
+    .field {
+      margin-right: 20px !important;
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .profile-segment {
+    width: 630px;
+  }
+
+  .profile-password-row {
+    display: flex;
+    justify-content: stretch;
+    margin: 30px 15px;
+  }
+
+  .profile-input {
+    margin-right: 20px !important;
+    margin-bottom: 0 !important;
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+
+  .profile-button {
+    margin-top: 0;
+    margin-right: 15px;
+  }
+}

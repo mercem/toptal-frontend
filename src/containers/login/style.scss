@@ -1,0 +1,97 @@
+.login-wrapper {
+  height: auto;
+  min-height: calc(100vh + 240px);
+  padding-top: 50px;
+  background-color: $navy-blue;
+}
+
+.login-header {
+  text-align: center;
+  color: $white;
+  font-size: $font-large;
+  font-weight: bold;
+  line-height: $font-large;
+}
+
+.login-card-header {
+  font-size: $font-large;
+  line-height: $line-height-large;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: $navy-blue;
+}
+
+.login-card-input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-card-wrapper {
+  padding: 20px;
+  background-color: #f4f6f7;
+  margin: 50px 40px;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  min-height: 350px;
+}
+
+.login-card-validation {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: $red;
+  font-weight: bold;
+}
+
+.login-card-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.login-card-button {
+  width: 150px;
+}
+
+.login-sign-up-text {
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  color: $navy-blue;
+}
+
+.login-card-dropdown {
+  width: 228px !important;
+}
+
+.login-continue {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: $navy-blue;
+  cursor: pointer;
+}
+
+// MEDIA
+
+@media (min-width: $breakpoint-tablet) {
+  .login-wrapper {
+    height: 100%;
+  }
+
+  .login-card-wrapper {
+    max-width: 500px;
+    margin: 60px auto 30px auto;
+  }
+
+  .login-wrapper {
+    padding-top: 80px;
+  }
+
+  .login-header {
+    font-size: $font-larger;
+    line-height: $line-height-larger;
+  }
+}

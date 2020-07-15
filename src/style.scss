@@ -1,0 +1,11 @@
+@import '~semantic-ui-css/semantic.min.css';
+
+@import 'src/common/variables';
+
+@import 'src/index';
+@import 'src/App';
+
+@import 'src/containers/login/style';
+@import 'src/containers/home/style';
+@import 'src/containers/profile/style';
+@import 'src/router/style';

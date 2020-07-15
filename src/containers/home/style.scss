@@ -1,0 +1,24 @@
+.home-header {
+  margin-bottom: 30px;
+  font-size: $font-large;
+  font-weight: bold;
+}
+
+.home-filter-dropdown {
+  margin-bottom: 10px;
+}
+
+.user-list-footer-row {
+  min-height: 80px;
+}
+// MEDIA
+
+@media (min-width: $breakpoint-tablet) {
+  .home-filter {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .home-filter-dropdown {
+    margin-left: 20px;
+  }
+}
